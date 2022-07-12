@@ -114,5 +114,64 @@
         <a href="https://htmlacademy.ru/" class="html-academy-logo"></a>
       </footer>
     </main>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+            <button class="modal-close-btn">
+            </button>
+          </div>
+          <form class="search-form">
+            <div class="search-form-input-container">
+              <label class="search-form-label">Дата заезда:</label>
+              <div class="search-form-input-wrapper">
+                <input type="text" class="search-form-date-input">
+                <div class="search-form-error-text field-signature">Мы не можем отправить Вас в прошлое</div>
+              </div>
+            </div>
+            <div class="search-form-input-container">
+              <label class="search-form-label">Дата выезда:</label>
+              <div class="seatch-forn-input-wrapper">
+                <input type="text" class="search-form-date-input">
+                <div class="search-form-warning-text field-signature">На эти даты есть свободные номера. Пока есть.</div>
+              </div>
+            </div>
+            <div class="search-numbers-container">
+                <label class="search-form-label">Взрослые:</label>
+                <div class="fields-wrapper">
+                  <div class="adults-input">
+                    <div class="field-control minus-control">
+                      <button class="minus"></button>
+                    </div>
+                    <input type="text" class="number-input" value="1">
+                    <div class="field-control plus-control">
+                      <button class="plus"></button>
+                    </div>
+                  </div>
+                  <div class="field-wrapper">
+                    <label class="search-form-label children">Дети:</label>
+                    <div class="info-icon">
+                      <div class="info-popover">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </div>
+                    </div>
+                    <div class="adults-input">
+                      <div class="field-control minus-control">
+                        <button class="minus"></button>
+                      </div>
+                      <input type="text" class="number-input" value="2">
+                      <div class="field-control plus-control">
+                        <button class="plus"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <input type="submit" class="search-form-btn" value="Найти">
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
