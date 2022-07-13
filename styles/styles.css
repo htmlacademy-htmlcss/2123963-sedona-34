@@ -646,7 +646,7 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.filters-list-item.checkbox .filters-checkbox:focus+label::before {
+.filters-list-item.checkbox .filters-checkbox:focus:not(:checked)+label::before {
     background-color: rgba(255, 255, 255, 0.6);
     border: 3px solid #83B3D3;
     width: 16px;
