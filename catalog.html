@@ -60,7 +60,7 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="filters-list">
               <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="hotel">
+                <input name="house-type" class="filters-radio" type="radio" id="hotel" checked>
                 <label class="filters-label" for="hotel">Гостиница</label>
               </li>
               <li class="filters-list-item radio">
@@ -77,7 +77,13 @@
             <legend class="catalog-filter-title price">Стоимость, ₽:</legend>
               <input type="number" placeholder="от" class="price-filter-input first">
               <input type="number" placeholder="до" class="price-filter-input">
-              <input type="range" min="0" max="100" value="50">
+              <div class="slider">
+                <div class="slider-content">
+                  <div class="slider-control"></div>
+                  <div class="slider-line"></div>
+                  <div class="slider-control"></div>
+                </div>
+              </div>
           </fieldset>
           <div class="filter-action">
             <button class="btn blue-btn filters-submit-btn" type="submit">Применить</button>
@@ -217,7 +223,7 @@
           </div>
       </section>
       <section class="subscribe subscribe-inner">
-        <h1 class="visually-hidden big-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h1>
+        <h2 class="visually-hidden big-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscribe-description inner">Только полезная информация и никакого спама,<br/> честное бойскаутское!</p>
         <form class="submit-form">
           <fieldset class="submit-form-fieldset">
