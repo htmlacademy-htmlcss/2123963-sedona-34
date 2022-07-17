@@ -373,11 +373,12 @@ body {
 }
 
 .main-header-section {
-    background: url("../images/index-background.jpg");
+    background-color: #D6E4ED;
+    background-image: url("../images/index-background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 485px;
+    height: 434px;
     margin-bottom: 63px;
     text-align: center;
     padding-top: 51px;
@@ -388,6 +389,7 @@ body {
 }
 
 .subscribe {
+    background-color: #90ACBA;
     background: url("../images/subscribe-background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -532,10 +534,13 @@ body {
     background-image: url('../images/html-academy-active.svg');
 }
 
-.catalog-products {
-    background: url("../images/catalog-background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+.catalog-filters-panel {
+  background-color: #756766;
+  background: url("../images/catalog-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 403px;
+  margin-bottom: 62px;
 }
 
 .catalog-page-title {
@@ -553,7 +558,6 @@ body {
     display: grid;
     grid-template-columns: 220px 320px 357px 160px;
     grid-template-rows: 56px 100px;
-    margin-bottom: 128px;
 }
 
 .form-fieldset {

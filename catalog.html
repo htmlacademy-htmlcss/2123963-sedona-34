@@ -33,63 +33,65 @@
     </header>
     <main class="main-inner">
       <section class="catalog-products">
-        <h1 class="catalog-page-title">Гостиницы Седоны</h1>
-        <div class="breadcrumbs">
-          <div class="bredcrumbs-hotel-icon"></div>
-          > Гостиницы
-        </div>
-        <form class="catalog-filter" action="">
-          <fieldset class="form-fieldset">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="filters-list">
-              <li class="filters-list-item checkbox">
-                <input class="filters-checkbox" type="checkbox" id="swimming-pool" name="infrastructure" value="swimmingPool">
-                <label class="filters-label" for="swimming-pool">Бассейн</label>
-              </li>
-              <li class="filters-list-item checkbox">
-                <input class="filters-checkbox" type="checkbox" id="parking" name="infrastructure" value="parking">
-                <label class="filters-label" for="parking">Парковка</label>
-              </li>
-              <li class="filters-list-item checkbox">
-                <input class="filters-checkbox" type="checkbox" id="wifi" name="infrastructure" value="wifi">
-                <label class="filters-label" for="wifi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-fieldset">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <ul class="filters-list">
-              <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="hotel" checked value="hotel">
-                <label class="filters-label" for="hotel">Гостиница</label>
-              </li>
-              <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="motel" value="motel">
-                <label class="filters-label" for="motel">Мотель</label>
-              </li>
-              <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="apartments" value="apartments">
-                <label class="filters-label" for="apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="price-filter form-fieldset">
-            <legend class="catalog-filter-title price">Стоимость, ₽:</legend>
-              <input type="number" placeholder="от" class="price-filter-input first" name="priceFrom">
-              <input type="number" placeholder="до" class="price-filter-input" name="priceTo">
-              <div class="slider">
-                <div class="slider-content">
-                  <div class="slider-control"></div>
-                  <div class="slider-line"></div>
-                  <div class="slider-control"></div>
-                </div>
-              </div>
-          </fieldset>
-          <div class="filter-action">
-            <button class="btn blue-btn filters-submit-btn" type="submit">Применить</button>
-            <button class="btn btn-reset" type="reset">Сбросить</button>
+        <div class="catalog-filters-panel">
+            <h1 class="catalog-page-title">Гостиницы Седоны</h1>
+          <div class="breadcrumbs">
+            <div class="bredcrumbs-hotel-icon"></div>
+            > Гостиницы
           </div>
-        </form>
+          <form class="catalog-filter" action="">
+            <fieldset class="form-fieldset">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="filters-list">
+                <li class="filters-list-item checkbox">
+                  <input class="filters-checkbox" type="checkbox" id="swimming-pool" name="infrastructure" value="swimmingPool">
+                  <label class="filters-label" for="swimming-pool">Бассейн</label>
+                </li>
+                <li class="filters-list-item checkbox">
+                  <input class="filters-checkbox" type="checkbox" id="parking" name="infrastructure" value="parking">
+                  <label class="filters-label" for="parking">Парковка</label>
+                </li>
+                <li class="filters-list-item checkbox">
+                  <input class="filters-checkbox" type="checkbox" id="wifi" name="infrastructure" value="wifi">
+                  <label class="filters-label" for="wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-fieldset">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="filters-list">
+                <li class="filters-list-item radio">
+                  <input name="house-type" class="filters-radio" type="radio" id="hotel" checked value="hotel">
+                  <label class="filters-label" for="hotel">Гостиница</label>
+                </li>
+                <li class="filters-list-item radio">
+                  <input name="house-type" class="filters-radio" type="radio" id="motel" value="motel">
+                  <label class="filters-label" for="motel">Мотель</label>
+                </li>
+                <li class="filters-list-item radio">
+                  <input name="house-type" class="filters-radio" type="radio" id="apartments" value="apartments">
+                  <label class="filters-label" for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="price-filter form-fieldset">
+              <legend class="catalog-filter-title price">Стоимость, ₽:</legend>
+                <input type="number" placeholder="от" class="price-filter-input first" name="priceFrom">
+                <input type="number" placeholder="до" class="price-filter-input" name="priceTo">
+                <div class="slider">
+                  <div class="slider-content">
+                    <div class="slider-control"></div>
+                    <div class="slider-line"></div>
+                    <div class="slider-control"></div>
+                  </div>
+                </div>
+            </fieldset>
+            <div class="filter-action">
+              <button class="btn blue-btn filters-submit-btn" type="submit">Применить</button>
+              <button class="btn btn-reset" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
         <header class="catalog-header">
           <div class="founds-quantity">Найдено гостиниц: 38</div>
           <div class="select-wrapper">
