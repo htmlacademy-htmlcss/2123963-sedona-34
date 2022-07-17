@@ -23,8 +23,10 @@
         </ul>
         <div class="header-btns">
           <button class="header-icon-btn header-search-btn" type="button">
+            <span class="visually-hidden">Кнопка поиска.</span>
           </button>
           <button class="header-icon-btn header-favorite-btn" type="button">
+            <span class="visually-hidden">Кнопка избранного.</span>
             <span class="favorite-amount-circle">12</span>
           </button>
          <button class="btn brown-btn" type="button">ХОЧУ СЮДА!</button>
@@ -106,9 +108,21 @@
       </section>
       <footer class="page-footer">
         <ul class="social-network-list">
-          <li class="social-network-list-item social-network-vk"></li>
-          <li class="social-network-list-item social-network-telegram"></li>
-          <li class="social-network-list-item social-network-youtube"></li>
+          <li class="social-network-list-item social-network-vk">
+            <a href="#">
+              <span class="visually-hidden">Перейти на страницу сайта в контакте.</span>
+            </a>
+          </li>
+          <li class="social-network-list-item social-network-telegram">
+            <a href="#">
+              <span class="visually-hidden">Перейти на канал в телеграме.</span>
+            </a>
+          </li>
+          <li class="social-network-list-item social-network-youtube">
+            <a href="#">
+              <span class="visually-hidden">Перейти на канал в youtube.</span>
+            </a>
+          </li>
         </ul>
         <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/" class="html-academy-logo"></a>
@@ -120,6 +134,7 @@
           <div class="modal-header">
             <h2 class="modal-title">Поиск гостиницы в седоне</h2>
             <button class="modal-close-btn" type="button">
+              <span class="visually-hidden">Закрыть окно.</span>
             </button>
           </div>
           <form class="search-form" action="catalog.html">
@@ -142,11 +157,15 @@
                 <div class="fields-wrapper">
                   <div class="adults-input">
                     <div class="field-control minus-control">
-                      <button class="minus" type="button"></button>
+                      <button class="minus" type="button">
+                        <span class="visually-hidden">Уменьшить количество на 1.</span>
+                      </button>
                     </div>
                     <input type="text" class="number-input" value="1" name="adultsAmount">
                     <div class="field-control plus-control">
-                      <button class="plus" type="button"></button>
+                      <button class="plus" type="button">
+                        <span class="visually-hidden">Увеличить количество на 1.</span>
+                      </button>
                     </div>
                   </div>
                   <div class="field-wrapper">
@@ -158,11 +177,15 @@
                     </div>
                     <div class="adults-input">
                       <div class="field-control minus-control">
-                        <button class="minus" type="button"></button>3
+                        <button class="minus" type="button">
+                          <span class="visually-hidden">Уменьшить количество на 1.</span>
+                        </button>
                       </div>
                       <input type="text" class="number-input" value="2" name="childrenAmount">
                       <div class="field-control plus-control">
-                        <button class="plus" type="button"></button>
+                        <button class="plus" type="button">
+                          <span class="visually-hidden">Увеличить количество на 1.</span>
+                        </button>
                       </div>
                     </div>
                   </div>
