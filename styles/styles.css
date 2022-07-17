@@ -642,7 +642,7 @@ body {
   background-size: 10px 10px;
 }
 
-.filters-list-item.checkbox:hover label::before {
+.filters-checkbox:hover:not(:disabled)+label::before {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -655,6 +655,10 @@ body {
 
 .filters-list-item.checkbox:active label::before {
     background: rgba(255, 255, 255, 0.3);
+}
+
+.filters-checkbox:disabled+label::before{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filters-list-item.radio label::before {
@@ -678,6 +682,10 @@ body {
     border: 3px solid #83B3D3;
     width: 16px;
     height: 16px;
+}
+
+.filters-radio:disabled+label::before{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filters-list-item:not(:last-child) {
