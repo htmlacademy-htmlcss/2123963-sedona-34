@@ -97,9 +97,9 @@
       <section class="subscribe">
         <h2 class="visually-hidden subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама,<br/> честное бойскаутское!</p>
-        <form class="submit-form">
+        <form class="submit-form" action="">
           <fieldset class="submit-form-fieldset">
-            <input placeholder="Ваш e-mail" class="subscribe-email-input"/>
+            <input placeholder="Ваш e-mail" class="subscribe-email-input" name="email"/>
             <input type="submit" class="btn blue-btn subscribe-btn" value="Подписаться">
           </fieldset>
         </form>
@@ -122,18 +122,18 @@
             <button class="modal-close-btn" type="button">
             </button>
           </div>
-          <form class="search-form">
+          <form class="search-form" action="catalog.html">
             <div class="search-form-input-container">
               <label class="search-form-label">Дата заезда:</label>
               <div class="search-form-input-wrapper">
-                <input type="text" class="search-form-date-input">
+                <input type="text" class="search-form-date-input" name="dateFrom">
                 <div class="search-form-error-text field-signature">Мы не можем отправить Вас в прошлое</div>
               </div>
             </div>
             <div class="search-form-input-container">
               <label class="search-form-label">Дата выезда:</label>
               <div class="seatch-forn-input-wrapper">
-                <input type="text" class="search-form-date-input">
+                <input type="text" class="search-form-date-input" name="dateTo">
                 <div class="search-form-warning-text field-signature">На эти даты есть свободные номера. Пока есть.</div>
               </div>
             </div>
@@ -144,7 +144,7 @@
                     <div class="field-control minus-control">
                       <button class="minus" type="button"></button>
                     </div>
-                    <input type="text" class="number-input" value="1">
+                    <input type="text" class="number-input" value="1" name="adultsAmount">
                     <div class="field-control plus-control">
                       <button class="plus" type="button"></button>
                     </div>
@@ -160,7 +160,7 @@
                       <div class="field-control minus-control">
                         <button class="minus" type="button"></button>3
                       </div>
-                      <input type="text" class="number-input" value="2">
+                      <input type="text" class="number-input" value="2" name="childrenAmount">
                       <div class="field-control plus-control">
                         <button class="plus" type="button"></button>
                       </div>

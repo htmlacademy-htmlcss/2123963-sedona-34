@@ -38,20 +38,20 @@
           <div class="bredcrumbs-hotel-icon"></div>
           > Гостиницы
         </div>
-        <form class="catalog-filter">
+        <form class="catalog-filter" action="">
           <fieldset class="form-fieldset">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="filters-list">
               <li class="filters-list-item checkbox">
-                <input class="filters-checkbox" type="checkbox" id="swimming-pool">
+                <input class="filters-checkbox" type="checkbox" id="swimming-pool" name="infrastructure" value="swimmingPool">
                 <label class="filters-label" for="swimming-pool">Бассейн</label>
               </li>
               <li class="filters-list-item checkbox">
-                <input class="filters-checkbox" type="checkbox" id="parking">
+                <input class="filters-checkbox" type="checkbox" id="parking" name="infrastructure" value="parking">
                 <label class="filters-label" for="parking">Парковка</label>
               </li>
               <li class="filters-list-item checkbox">
-                <input class="filters-checkbox" type="checkbox" id="wifi">
+                <input class="filters-checkbox" type="checkbox" id="wifi" name="infrastructure" value="wifi">
                 <label class="filters-label" for="wifi">Wi-Fi</label>
               </li>
             </ul>
@@ -60,23 +60,23 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="filters-list">
               <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="hotel" checked>
+                <input name="house-type" class="filters-radio" type="radio" id="hotel" checked value="hotel">
                 <label class="filters-label" for="hotel">Гостиница</label>
               </li>
               <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="motel">
+                <input name="house-type" class="filters-radio" type="radio" id="motel" value="motel">
                 <label class="filters-label" for="motel">Мотель</label>
               </li>
               <li class="filters-list-item radio">
-                <input name="house-type" class="filters-radio" type="radio" id="apartments">
+                <input name="house-type" class="filters-radio" type="radio" id="apartments" value="apartments">
                 <label class="filters-label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="price-filter form-fieldset">
             <legend class="catalog-filter-title price">Стоимость, ₽:</legend>
-              <input type="number" placeholder="от" class="price-filter-input first">
-              <input type="number" placeholder="до" class="price-filter-input">
+              <input type="number" placeholder="от" class="price-filter-input first" name="priceFrom">
+              <input type="number" placeholder="до" class="price-filter-input" name="priceTo">
               <div class="slider">
                 <div class="slider-content">
                   <div class="slider-control"></div>
@@ -225,9 +225,9 @@
       <section class="subscribe subscribe-inner">
         <h2 class="visually-hidden big-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscribe-description inner">Только полезная информация и никакого спама,<br/> честное бойскаутское!</p>
-        <form class="submit-form">
+        <form class="submit-form" action="">
           <fieldset class="submit-form-fieldset">
-            <input placeholder="Ваш e-mail" class="subscribe-email-input"/>
+            <input placeholder="Ваш e-mail" class="subscribe-email-input"/ name="email">
             <input type="submit" class="btn blue-btn subscribe-btn" value="Подписаться">
           </fieldset>
         </form>
