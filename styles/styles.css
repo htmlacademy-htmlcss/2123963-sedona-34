@@ -53,10 +53,6 @@ body {
     padding: 20px 17px 20px 17px;
 }
 
-.navigation-item:last-child {
-  padding-right: 0;
-}
-
 .navigation-link:visited {
     color: #000000;
 }
