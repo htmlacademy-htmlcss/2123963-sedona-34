@@ -23,11 +23,13 @@
         </ul>
         <div class="header-btns">
           <button class="header-icon-btn header-search-btn" type="button">
+            <span class="visually-hidden">Кнопка поиска.</span>
           </button>
           <button class="header-icon-btn header-favorite-btn" type="button">
+            <span class="visually-hidden">Кнопка избранного.</span>
             <span class="favorite-amount-circle">12</span>
           </button>
-         <button class="btn brown-btn" type="button">ХОЧУ СЮДА!</button>
+         <button class="btn brown-btn want-here-btn" type="button">ХОЧУ СЮДА!</button>
         </div>
       </nav>
     </header>
@@ -58,7 +60,7 @@
               </ul>
             </fieldset>
             <fieldset class="form-fieldset">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
               <ul class="filters-list">
                 <li class="filters-list-item radio">
                   <input name="house-type" class="filters-radio" type="radio" id="hotel" checked value="hotel">
@@ -97,7 +99,7 @@
           <div class="select-wrapper">
             <select name="sort" class="select-control filter-select">
               <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
+              <option value="cheap" selected>Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
           </div>
@@ -228,7 +230,7 @@
           </div>
       </section>
       <section class="subscribe subscribe-inner">
-        <h2 class="visually-hidden big-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <h2 class="big-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscribe-description inner">Только полезная информация и никакого спама,<br/> честное бойскаутское!</p>
         <form class="submit-form" action="">
           <fieldset class="submit-form-fieldset">
